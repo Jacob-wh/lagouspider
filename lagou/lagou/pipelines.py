@@ -13,6 +13,7 @@ class LagouPipeline(object):
         positionIntro = ''.join(str(i) for i in item["positionIntro"])
         positionLabel = ','.join(str(i) for i in item["positionLabel"])
         workResponsibility = ''.join(str(i) for i in item["workResponsibility"])
+        workResponsibility = workResponsibility.replace("，",",").replace("。",".").replace("：",":").replace("【","[").replace("】","]").replace("；",";").replace("、",",").replace(" " , "")
         positionWelfare = ','.join(str(i) for i in item["positionWelfare"])
         workAddress = ''.join(str(i) for i in item["workAddress"])
         workAddress = workAddress.replace("查看地图","")
