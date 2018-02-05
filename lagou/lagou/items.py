@@ -10,10 +10,10 @@ import scrapy
 
 class LagouItem(scrapy.Item):
     # define the fields for your item here like:
+    companyName = scrapy.Field();
     positionName = scrapy.Field();
     positionIntro = scrapy.Field();
-    positionHead = scrapy.Field();
+    positionLabel = scrapy.Field();
     workResponsibility = scrapy.Field();
-    workRequire = scrapy.Field();
     positionWelfare = scrapy.Field();
     workAddress = scrapy.Field();
